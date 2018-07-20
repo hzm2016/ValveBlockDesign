@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBE32E9A-4DE5-4DE2-B1AA-01FC1FB2D495}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ValveBlockDesign</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autodesk.Inventor.interop, Version=17.0.0.0, Culture=neutral, PublicKeyToken=d84147f8b4276564, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Autodesk.Inventor.Interop\v4.0_18.0.0.0__d84147f8b4276564\Autodesk.Inventor.interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddinInstaller1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Command\BoltHoleCmd\BoltHolesRequest.cs" />
+    <Compile Include="Command\BoltHoleCmd\BoltHoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\BoltHoleCmd\BoltHoleForm.Designer.cs">
+      <DependentUpon>BoltHoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\BoltHoleCmd\BoltHolesFormCmd.cs" />
+    <Compile Include="Command\CavityLibrary\CavityLibraryEditDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryEditDataForm.Designer.cs">
+      <DependentUpon>CavityLibraryEditDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryEditForm.Designer.cs">
+      <DependentUpon>CavityLibraryEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryScanDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryScanDataForm.Designer.cs">
+      <DependentUpon>CavityLibraryScanDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryScanForm.Designer.cs">
+      <DependentUpon>CavityLibraryScanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\AlignCmd\AlignCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Command\AlignCmd\AlignCmdDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\AlignCmd\AlignCmdDlg.Designer.cs">
+      <DependentUpon>AlignCmdDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\AlignCmd\AlignRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Command\BlockFormCmd\BlockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\BlockFormCmd\BlockFormCmd.cs" />
+    <Compile Include="Command\BlockFormCmd\BlockFormRequest.cs" />
+    <Compile Include="ChangeProcessor.cs" />
+    <Compile Include="ChangeRequest.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Command\BlockFormCmd\BrowserPanecmd.cs" />
+    <Compile Include="Command\CavityLibrary\CavityLibraryAddCmd.cs" />
+    <Compile Include="Command\CavityLibrary\CavityLibraryAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryAddForm.Designer.cs">
+      <DependentUpon>CavityLibraryAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\CavityLibrary\CavityLibraryEditCmd.cs" />
+    <Compile Include="Command\CavityLibrary\CavityLibraryScanCmd.cs" />
+    <Compile Include="Command\ConnectCmd\ConnectCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Command\ConnectCmd\ConnectCmdDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\ConnectCmd\ConnectCmdDlg.designer.cs">
+      <DependentUpon>ConnectCmdDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\ConnectCmd\ConnectRequest.cs" />
+    <Compile Include="Command\DeleteCmd\DeleteCmd.cs" />
+    <Compile Include="Command\EditNetCmd\EditNetCmd.cs" />
+    <Compile Include="Command\EditNetCmd\EditNetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\EditNetCmd\EditNetForm.Designer.cs">
+      <DependentUpon>EditNetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\iFeatureFormCmd\BrowserNodeCmd.cs" />
+    <Compile Include="Command\iFeatureFormCmd\EditCavityLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\iFeatureFormCmd\EditCavityLibrary.designer.cs">
+      <DependentUpon>EditCavityLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\iFeatureFormCmd\ExtractiFeatureCmd.cs" />
+    <Compile Include="Command\iFeatureFormCmd\iFeatureFormCmd.cs" />
+    <Compile Include="Command\iFeatureFormCmd\iFeatureFormRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Command\iFeatureFormCmd\ModifyCavity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\iFeatureFormCmd\ModifyCavity.Designer.cs">
+      <DependentUpon>ModifyCavity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\MoveCmd\MoveCmdDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\MoveCmd\MoveCmdDlg.Designer.cs">
+      <DependentUpon>MoveCmdDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectToAccess.cs" />
+    <Compile Include="Command\DeleteCmd\DeleteCavityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\DeleteCmd\DeleteCavityForm.Designer.cs">
+      <DependentUpon>DeleteCavityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\DeleteCmd\DeleteRequest.cs" />
+    <Compile Include="Command\InsertOutline\InsertOutlineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\InsertOutline\InsertOutlineForm.Designer.cs">
+      <DependentUpon>InsertOutlineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\InsertOutline\InsertOutlineCmd.cs" />
+    <Compile Include="Command\InsertOutline\InsertOutlineRequest.cs" />
+    <Compile Include="Command\X-Port\InsertXportCmd.cs" />
+    <Compile Include="Command\X-Port\InsertXportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\X-Port\InsertXportForm.Designer.cs">
+      <DependentUpon>InsertXportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\X-Port\InsertXportRequest.cs" />
+    <Compile Include="Command\EditNetCmd\EditNetRequest.cs" />
+    <Compile Include="Interaction.cs" />
+    <Compile Include="Command\MoveCmd\MoveCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Command\MoveCmd\MoveRequest.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Command\RotateCmd\RotateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\RotateCmd\RotateForm.Designer.cs">
+      <DependentUpon>RotateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\RotateCmd\RotateCmd.cs" />
+    <Compile Include="Command\RotateCmd\RotateRequest.cs" />
+    <Compile Include="SetUp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SetUp.Designer.cs">
+      <DependentUpon>SetUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardAddInServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ValveBlockDesign.X.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Autodesk.ValveBlockDesign.Inventor.addin">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Command\BoltHoleCmd\BoltHoleForm.resx">
+      <DependentUpon>BoltHoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\CavityLibrary\CavityLibraryEditDataForm.resx">
+      <DependentUpon>CavityLibraryEditDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\CavityLibrary\CavityLibraryEditForm.resx">
+      <DependentUpon>CavityLibraryEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\CavityLibrary\CavityLibraryScanDataForm.resx">
+      <DependentUpon>CavityLibraryScanDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\CavityLibrary\CavityLibraryScanForm.resx">
+      <DependentUpon>CavityLibraryScanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\ConnectCmd\ConnectCmdDlg.resx">
+      <DependentUpon>ConnectCmdDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\Align.ico" />
+    <EmbeddedResource Include="Command\AlignCmd\AlignCmdDlg.resx">
+      <DependentUpon>AlignCmdDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\BlockFormCmd\BlockForm.resx">
+      <DependentUpon>BlockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\CavityLibrary\CavityLibraryAddForm.resx">
+      <DependentUpon>CavityLibraryAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\EditNetCmd\EditNetForm.resx">
+      <DependentUpon>EditNetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\iFeatureFormCmd\EditCavityLibrary.resx">
+      <DependentUpon>EditCavityLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\iFeatureFormCmd\ModifyCavity.resx">
+      <DependentUpon>ModifyCavity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\DeleteCmd\DeleteCavityForm.resx">
+      <DependentUpon>DeleteCavityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\InsertOutline\InsertOutlineForm.resx">
+      <DependentUpon>InsertOutlineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\X-Port\InsertXportForm.resx">
+      <DependentUpon>InsertXportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\MoveCmdStandard.ico" />
+    <EmbeddedResource Include="Command\RotateCmd\RotateForm.resx">
+      <DependentUpon>RotateForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Command\MoveCmd\MoveCmdDlg.resx">
+      <DependentUpon>MoveCmdDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\ConnectStandard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\BlockStandard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\AlignStandard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\cursor_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\ExtractiFeatureStandard.ico" />
+    <EmbeddedResource Include="resources\InsertiFeatureStandard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\Cavity.ico" />
+    <EmbeddedResource Include="resources\NET1.ico" />
+    <EmbeddedResource Include="resources\ScanCavityCmdStandard.ico" />
+    <EmbeddedResource Include="resources\EditCavityCmdStandard.ico" />
+    <EmbeddedResource Include="resources\AddCavityCmdStandard.ico" />
+    <EmbeddedResource Include="resources\Footprint.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\DeleteCmdStandard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\BoltHolesCmdLarge.ico" />
+    <EmbeddedResource Include="resources\BoltHolesCmdStandard.ico" />
+    <EmbeddedResource Include="resources\RotateCmdStandard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\NET14.ico" />
+    <EmbeddedResource Include="resources\Footprint1.ico" />
+    <EmbeddedResource Include="resources\Cavity1.ico" />
+    <EmbeddedResource Include="resources\BlockLarge.ico" />
+    <EmbeddedResource Include="resources\Xport.ico" />
+    <EmbeddedResource Include="resources\ConnectLarge.ico" />
+    <EmbeddedResource Include="resources\MoveCmdLarge.ico" />
+    <EmbeddedResource Include="resources\AlignLarge.ico" />
+    <EmbeddedResource Include="resources\EditCavityCmdLarge.ico" />
+    <EmbeddedResource Include="resources\ScanCavityCmdLarge.ico" />
+    <EmbeddedResource Include="resources\AddCavityCmdLarge.ico" />
+    <EmbeddedResource Include="resources\EditColor.ico" />
+    <EmbeddedResource Include="resources\DeleteCmdLarge.ico" />
+    <EmbeddedResource Include="resources\NET13.ico" />
+    <EmbeddedResource Include="resources\NewRotate.ico" />
+    <EmbeddedResource Include="resources\RotateCmdLarge.ico" />
+    <EmbeddedResource Include="resources\InsertiFeatureLarge.ico" />
+    <EmbeddedResource Include="resources\ExtractiFeatureLarge.ico" />
+    <EmbeddedResource Include="resources\OutLineCmdLarge.ico" />
+    <Content Include="resources\OutLineCmdStandard.ico" />
+    <Content Include="resources\rotateNew.ico" />
+    <EmbeddedResource Include="resources\NET3.ico" />
+    <EmbeddedResource Include="resources\NET4.ico" />
+    <EmbeddedResource Include="resources\NET5.ico" />
+    <EmbeddedResource Include="resources\NET6.ico" />
+    <EmbeddedResource Include="resources\NET7.ico" />
+    <EmbeddedResource Include="resources\NET8.ico" />
+    <EmbeddedResource Include="resources\NET9.ico" />
+    <EmbeddedResource Include="resources\NULL.ico" />
+    <EmbeddedResource Include="resources\NET10.ico" />
+    <EmbeddedResource Include="resources\NET11.ico" />
+    <EmbeddedResource Include="resources\NET12.ico" />
+    <EmbeddedResource Include="resources\NET2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>call "%25VS100COMNTOOLS%25vsvars32"
+			mt.exe -manifest "$(ProjectDir)ValveBlockDesign.X.manifest" -outputresource:"$(TargetPath)";#2
+xcopy /y "$(ProjectDir)Autodesk.ValveBlockDesign.Inventor.addin" "$(ProgramData)\Autodesk\Inventor 2014\Addins\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

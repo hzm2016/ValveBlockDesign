@@ -1,0 +1,14 @@
+<Addin Type="Standard">
+  <!--Created for Autodesk Inventor Version 18.0-->
+  <ClassId>{c29d5be2-c9f7-4783-9191-5070d4944568}</ClassId>
+  <ClientId>{c29d5be2-c9f7-4783-9191-5070d4944568}</ClientId>
+  <DisplayName>ValveBlockDesign</DisplayName>
+  <Description>ValveBlockDesign</Description>
+  <Assembly>F:\ValveBlockDesign\ValveBlockDesign\bin\Debug\ValveBlockDesign.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>1</UserUnloadable>
+  <Hidden>0</Hidden>
+  <SupportedSoftwareVersionGreaterThan>17..</SupportedSoftwareVersionGreaterThan>
+  <DataVersion>1</DataVersion>
+  <UserInterfaceVersion>1</UserInterfaceVersion>
+</Addin>

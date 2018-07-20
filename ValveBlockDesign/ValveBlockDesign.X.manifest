@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="ValveBlockDesign" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{c29d5be2-c9f7-4783-9191-5070d4944568}" progid="ValveBlockDesign.StandardAddInServer" threadingModel="Both" name="ValveBlockDesign.StandardAddInServer" runtimeVersion=""></clrClass>
+
+  <file name="ValveBlockDesign.dll" hashalg="SHA1"></file>
+
+</assembly>
